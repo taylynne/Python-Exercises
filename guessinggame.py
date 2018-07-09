@@ -14,14 +14,16 @@ def guessingGame(x):
 			break
 		elif x > num:
 			print("Unfortunately, the number I'm thinking of is smaller...")
-			x = int(input("Try again."))
+			x = int(input("Try again. "))
 		elif x < num:
 			print("It seems the number I am thinking of is larger!")
-			x = int(input("Try again."))
+			x = int(input("Try again. "))
 
 print("Let's play a small game!  Try to guess the number I'm thinking of, between 1 and 10.")
-guess = int(input("What number am I thinking of?"))
+guess = int(input("What number am I thinking of? \n"))
 
 guessingGame(guess)
 
+
+# come back to this to update how to keep track of the number of guesses, and do other "extras"
 
